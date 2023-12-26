@@ -1,44 +1,135 @@
+import { Facebook, Instagram, Mail, Phone, Youtube } from "lucide-react";
+import { useEffect, useState } from "react";
+
 const Header = () => {
+  const [header, setHeader] = useState(false);
+
+  useEffect(() => {
+    const scrollYPos = window.addEventListener("scroll", () => {
+      window.scrollY > 50 ? setHeader(true) : setHeader(false);
+    });
+
+    return window.addEventListener("scroll", scrollYPos);
+  }, []);
+
   return (
-    <header className="text-gray-600 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
-          <span className="ml-3 text-xl">Tailblocks</span>
-        </a>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">First Link</a>
-          <a className="mr-5 hover:text-gray-900">Second Link</a>
-          <a className="mr-5 hover:text-gray-900">Third Link</a>
-          <a className="mr-5 hover:text-gray-900">Fourth Link</a>
+    <div className="transition-all container mx-auto sticky top-0 z-30 rounded-b-md bg-white ">
+      <header className={``}>
+        <div
+          className={`${
+            header ? "hidden" : "w-full bg-gray-600"
+          } p-3 flex justify-between items-center`}
+        >
+          <div className="text-amber-700 flex justify-between">
+            <ul className="flex gap-2">
+              <li>
+                <a href="mailto:tenmien@cuaban.com" className="flex gap-2">
+                  <Mail />
+                  tenmien@cuaban.com
+                </a>
+              </li>
+              <li className="border-l-2 border-gray-500 pl-2">
+                <a href="tel:0942166086" className="flex gap-2">
+                  <Phone />
+                  +84 942 166 086
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="flex gap-2 text-white">
+            <a className="rounded-full border-2 p-2" href="#">
+              <Facebook size={16} />
+            </a>{" "}
+            <a className="rounded-full border-2 p-2" href="#">
+              <Youtube size={16} />
+            </a>{" "}
+            <a className="rounded-full border-2 p-2" href="#">
+              <Instagram size={16} />
+            </a>{" "}
+          </div>
+        </div>
+        <nav className="flex px-4 border-b md:shadow-lg items-center relative rounded-md">
+          <div className="text-lg font-bold md:py-0 py-4">
+            <div className="w-[180px] h-[50px] bg-logo bg-no-repeat bg-contain bg-center" />
+          </div>
+          <ul className="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
+            <li>
+              <a
+                href="#"
+                className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
+              >
+                <span>Trang chủ</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
+              >
+                <span>Giới thiệu</span>
+              </a>
+            </li>
+            <li className="relative parent">
+              <a
+                href="#"
+                className="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2"
+              >
+                <span>Dịch vụ</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 fill-current pt-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                </svg>
+              </a>
+              <ul className="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b">
+                <li>
+                  <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
+                    Web development
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
+                    Web Design
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
+                    Machine Learning
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
+              >
+                <span>Tin tức</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
+              >
+                <span>Liên hệ</span>
+              </a>
+            </li>
+          </ul>
+          <div className="ml-auto md:hidden text-gray-500 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-5 h-5 fill-current"
+              viewBox="0 0 24 24"
+            >
+              <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+            </svg>
+          </div>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 };
 

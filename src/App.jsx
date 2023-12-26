@@ -9,7 +9,7 @@ import { CarouselDefault } from "./components/Carousel/Carousel";
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <>
       <Header />
       <CarouselDefault />
       <Hero />
@@ -18,7 +18,7 @@ function App() {
       <Blogs />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 

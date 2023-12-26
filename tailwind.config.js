@@ -10,7 +10,11 @@ export default withMT({
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        logo: "url(/Logo.png)",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 });
