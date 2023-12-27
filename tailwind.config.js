@@ -13,6 +13,11 @@ export default withMT({
     extend: {
       backgroundImage: {
         logo: "url(/Logo.png)",
+        establish:
+          "url(src/assets/img/242376310_313388350589707_2189830417291079029_n.jpg)",
+      },
+      colors: {
+        blackOpacity: "rgb(0,0,0,0.5)",
       },
     },
   },
