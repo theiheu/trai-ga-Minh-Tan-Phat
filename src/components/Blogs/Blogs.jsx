@@ -1,114 +1,116 @@
 const Blogs = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -mx-4 -my-8">
-          <div className="py-8 px-4 lg:w-1/3">
-            <div className="h-full flex items-start">
-              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                <span className="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">
-                  Jul
-                </span>
-                <span className="font-medium text-lg text-gray-800 title-font leading-none">
-                  18
-                </span>
-              </div>
-              <div className="flex-grow pl-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-yellow-500 mb-1">
-                  CATEGORY
-                </h2>
-                <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
-                  The 400 Blows
-                </h1>
-                <p className="leading-relaxed mb-5">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-                <a className="inline-flex items-center">
-                  <img
-                    alt="blog"
-                    src="https://dummyimage.com/103x103"
-                    className="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
-                  />
-                  <span className="flex-grow flex flex-col pl-3">
-                    <span className="title-font font-medium text-gray-900">
-                      Alper Kamu
-                    </span>
-                  </span>
-                </a>
-              </div>
+    <section className="container mx-auto text-gray-600 body-font overflow-hidden py-24">
+      <div className="flex flex-wrap w-full mb-20">
+        <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            TIN TỨC - SỰ KIỆN
+          </h1>
+          <div className="h-1 w-20 bg-yellow-500 rounded" />
+        </div>
+      </div>
+      <div className="px-5">
+        <div className="-my-8 divide-y-2 divide-gray-100">
+          <div className="py-8 flex flex-wrap md:flex-nowrap">
+            <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span className="font-semibold title-font text-gray-700">
+                CATEGORY
+              </span>
+              <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+            </div>
+            <div className="md:flex-grow">
+              <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                Bitters hashtag waistcoat fashion axe chia unicorn
+              </h2>
+              <p className="leading-relaxed">
+                Glossier echo park pug, church-key sartorial biodiesel
+                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon
+                party messenger bag selfies, poke vaporware kombucha
+                lumbersexual pork belly polaroid hoodie portland craft beer.
+              </p>
+              <a className="text-yellow-500 inline-flex items-center mt-4">
+                Đọc thêm
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
-          <div className="py-8 px-4 lg:w-1/3">
-            <div className="h-full flex items-start">
-              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                <span className="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">
-                  Jul
-                </span>
-                <span className="font-medium text-lg text-gray-800 title-font leading-none">
-                  18
-                </span>
-              </div>
-              <div className="flex-grow pl-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-yellow-500 mb-1">
-                  CATEGORY
-                </h2>
-                <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
-                  Shooting Stars
-                </h1>
-                <p className="leading-relaxed mb-5">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-                <a className="inline-flex items-center">
-                  <img
-                    alt="blog"
-                    src="https://dummyimage.com/102x102"
-                    className="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
-                  />
-                  <span className="flex-grow flex flex-col pl-3">
-                    <span className="title-font font-medium text-gray-900">
-                      Holden Caulfield
-                    </span>
-                  </span>
-                </a>
-              </div>
+          <div className="py-8 flex flex-wrap md:flex-nowrap">
+            <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span className="font-semibold title-font text-gray-700">
+                CATEGORY
+              </span>
+              <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+            </div>
+            <div className="md:flex-grow">
+              <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                Meditation bushwick direct trade taxidermy shaman
+              </h2>
+              <p className="leading-relaxed">
+                Glossier echo park pug, church-key sartorial biodiesel
+                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon
+                party messenger bag selfies, poke vaporware kombucha
+                lumbersexual pork belly polaroid hoodie portland craft beer.
+              </p>
+              <a className="text-yellow-500 inline-flex items-center mt-4">
+                Đọc thêm
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
-          <div className="py-8 px-4 lg:w-1/3">
-            <div className="h-full flex items-start">
-              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                <span className="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">
-                  Jul
-                </span>
-                <span className="font-medium text-lg text-gray-800 title-font leading-none">
-                  18
-                </span>
-              </div>
-              <div className="flex-grow pl-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-yellow-500 mb-1">
-                  CATEGORY
-                </h2>
-                <h1 className="title-font text-xl font-medium text-gray-900 mb-3">
-                  Neptune
-                </h1>
-                <p className="leading-relaxed mb-5">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p>
-                <a className="inline-flex items-center">
-                  <img
-                    alt="blog"
-                    src="https://dummyimage.com/101x101"
-                    className="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"
-                  />
-                  <span className="flex-grow flex flex-col pl-3">
-                    <span className="title-font font-medium text-gray-900">
-                      Henry Letham
-                    </span>
-                  </span>
-                </a>
-              </div>
+          <div className="py-8 flex flex-wrap md:flex-nowrap">
+            <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span className="font-semibold title-font text-gray-700">
+                CATEGORY
+              </span>
+              <span className="text-sm text-gray-500">12 Jun 2019</span>
+            </div>
+            <div className="md:flex-grow">
+              <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">
+                Woke master cleanse drinking vinegar salvia
+              </h2>
+              <p className="leading-relaxed">
+                Glossier echo park pug, church-key sartorial biodiesel
+                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon
+                party messenger bag selfies, poke vaporware kombucha
+                lumbersexual pork belly polaroid hoodie portland craft beer.
+              </p>
+              <a className="text-yellow-500 inline-flex items-center mt-4">
+                Đọc thêm
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
