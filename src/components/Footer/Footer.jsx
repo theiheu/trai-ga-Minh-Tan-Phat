@@ -1,104 +1,50 @@
+import { Globe, Mail, MapPinned, PhoneCall } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <span className="font-bold text-xl">TRẠI GÀ MINH TÂN PHÁT</span>
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              className="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-            </svg>
-            <span className="ml-3 text-xl">Tailblocks</span>
+            <img src="public/looogo.png" alt="" />
           </a>
-          <p className="mt-2 text-sm text-gray-500">
-            Air plant banjo lyft occupy retro adaptogen indego
-          </p>
         </div>
-        <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-              </li>
-              <li>
-                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
+        <div className=" lg:w-1/3 md:w-1/2 w-fulflex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <span className="font-bold text-xl">THÔNG TIN LIÊN HỆ</span>
+          <ul className="mt-2 text-sm text-gray-500l px-4">
+            <li className="flex items-center justify-start">
+              <MapPinned size={36} />
+              <span className="ml-2">
+                Địa chỉ: Ấp Tân Đức, xã Minh Tân, huyện Dầu Tiếng, tỉnh Bình
+                Dương
+              </span>
+            </li>
+            <li className="flex items-center justify-start mt-2">
+              <PhoneCall />
+              <span className="ml-2">SDT: 096 407 78 79</span>
+            </li>
+            <li className="flex items-center justify-start mt-2">
+              <Mail size={24} />
+              <span className="ml-2">Email: ttgminhtanphat@gmail.com</span>
+            </li>
+            <li className="flex items-center justify-start mt-2">
+              <Globe size={24} />
+              <span className="ml-2">Website: taigaminhtanphat.com</span>
+            </li>
+          </ul>
+        </div>
+        <div className="lg:w-1/3 md:w-1/2 w-full px-4">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61554767048879&tabs=timeline&width=700&height=366&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+            width={800}
+            height={266}
+            style={{ border: "none", overflow: "hidden" }}
+            scrolling="no"
+            frameBorder={0}
+            allowFullScreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          />
         </div>
       </div>
       <div className="bg-gray-100">
