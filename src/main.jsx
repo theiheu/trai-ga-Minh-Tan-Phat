@@ -6,6 +6,8 @@ import { ThemeProvider } from "@material-tailwind/react";
 import ErrorPage from "./pages/ErrorPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import About from "./pages/About";
+import Contact from "./components/Contact/Contact.jsx";
+import Blogs from "./components/Blogs/Blogs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,12 +24,12 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/contact",
-        element: <div>Contact</div>,
+        path: "/blogs",
+        element: <Blogs />,
       },
       {
-        path: "*",
-        element: <div>Not found</div>,
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

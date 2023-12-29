@@ -2,12 +2,15 @@ const About = () => {
   return (
     <div className="container mx-auto mt-12">
       <div>
-        <header className="text-gray-700 p-4">
-          <h1 className="text-4xl font-bold">
-            Trại Gà Minh Tân Phát - Nguồn Cung Ứng Trứng Sạch
-          </h1>
+        <header className="flex flex-wrap w-full mb-10 text-gray-700">
+          <div className="w-full mb-6 lg:mb-0">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+              Trại Gà Minh Tân Phát - Nguồn Cung Ứng Trứng Sạch
+            </h1>
+            <div className="h-1 w-20 bg-yellow-500 rounded" />
+          </div>
         </header>
-        <section className="container mx-auto my-8 p-8 bg-white shadow-lg rounded-lg">
+        <section className="container mx-auto px-8 py-6 bg-white shadow-lg rounded-lg">
           <div>
             <h2 className="text-2xl font-semibold mb-4">
               Chào mừng bạn đến với trại gà của chúng tôi!

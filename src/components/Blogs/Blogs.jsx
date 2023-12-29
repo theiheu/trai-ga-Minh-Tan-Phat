@@ -1,6 +1,6 @@
 const Blogs = () => {
   return (
-    <section className="container mx-auto text-gray-600 body-font overflow-hidden py-24">
+    <section className="container mx-auto text-gray-600 body-font overflow-hidden mt-24">
       <div className="flex flex-wrap w-full mb-20">
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">

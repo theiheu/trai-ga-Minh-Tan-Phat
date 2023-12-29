@@ -2,11 +2,17 @@ import { Facebook, Instagram, Mail, Phone, Youtube } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-  const [header, setHeader] = useState(false);
+  const [header, setHeader] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY >= 400 ? setHeader(true) : setHeader(false);
+      header
+        ? window.scrollY < 400
+          ? setHeader(true)
+          : setHeader(false)
+        : window.scrollY > 340
+        ? setHeader(false)
+        : setHeader(true);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -14,14 +20,14 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [header]);
 
   return (
     <div className="transition-all container mx-auto sticky top-0 z-30 rounded-b-md bg-white ">
       <header className={``}>
         <div
           className={`${
-            header ? "hidden" : "w-full bg-gray-600"
+            header ? "w-full bg-gray-600" : "hidden"
           } p-3 flex justify-between items-center`}
         >
           <div className="text-amber-700 flex justify-between">
@@ -57,9 +63,9 @@ const Header = () => {
           </div>
         </div>
         <nav className="flex px-4 border-b md:shadow-lg items-center relative rounded-md">
-          <div className="text-lg font-bold md:py-0 py-4">
-            <div className="w-[180px] h-[50px] bg-logo bg-no-repeat bg-contain bg-center" />
-          </div>
+          <a href="/" className="text-lg font-bold md:py-0 py-4">
+            <div className="w-[180px] h-[50px] bg-logo bg-no-repeat bg-contain bg-center"></div>
+          </a>
           <ul className="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
             <li>
               <a
@@ -111,7 +117,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/blogs"
                 className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
               >
                 <span>Tin tức</span>
@@ -119,7 +125,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/contact"
                 className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
               >
                 <span>Liên hệ</span>
