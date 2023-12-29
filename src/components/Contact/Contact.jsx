@@ -16,11 +16,11 @@ const Contact = () => {
       </div>
       <div className="container px-5 py-24 mx-auto flex">
         <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-            Feedback
-          </h2>
+          <h1 className="text-gray-900 text-2xl mb-1 font-semibold title-font">
+            Phản hồi
+          </h1>
           <p className="leading-relaxed mb-5 text-gray-600">
-            Post-ironic portland shabby chic echo park, banjo fashion axe
+            Nếu có bất kỳ thắc mắc nào, vui lòng liên hệ với chúng tôi.
           </p>
           <div className="relative mb-4">
             <label htmlFor="email" className="leading-7 text-sm text-gray-600">
@@ -48,11 +48,10 @@ const Contact = () => {
             />
           </div>
           <button className="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">
-            Button
+            Gửi
           </button>
           <p className="text-xs text-gray-500 mt-3">
-            Chicharrones blog helvetica normcore iceland tousled brook viral
-            artisan.
+            Chúng tôi sẽ phản hồi lại bạn trong vòng 24 giờ.
           </p>
         </div>
       </div>
