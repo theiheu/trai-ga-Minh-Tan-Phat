@@ -1,5 +1,5 @@
 const MobileNav = () => {
-  return <div></div>;
+  return <div>Mobile nav</div>;
 };
 
 export default MobileNav;
