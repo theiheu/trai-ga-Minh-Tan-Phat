@@ -1,8 +1,8 @@
 const Services = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font p-2">
       <div className="container pt-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
+        <div className="flex flex-wrap w-full mb-10 md:mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
               SẢN PHẨM - DỊCH VỤ

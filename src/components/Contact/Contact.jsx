@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="text-gray-600 body-font relative mt-24">
+    <section className="text-gray-600 body-font relative mt-24 p-2">
       <div className="absolute inset-0 bg-gray-300">
         <iframe
           width="100%"
