@@ -45,7 +45,7 @@ const Infrastructure = () => {
   return (
     <section className="container mx-auto min-h[500px] md:w-3/4 w-full relative md:-top-16 bg-white border-[1px] rounded-md z-500 p-2">
       <div className="flex flex-col items-center justify-center mt-10 before:block before:absolute before:inset-2 before:-top-10 before:bg-gray-500 before:left-1 before:w-2 before:h-40 before:-rotate-3 before:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] before:-z-[1] after:block after:absolute  after:-top-10 after:bg-gray-500 after:right-1 after:w-2 after:h-40 after:rotate-3 after:shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] after:-z-[1] relative z-1">
-        <Typography variant="h2">Cơ sở vật chất</Typography>
+        <Typography variant="h2">Trang trại</Typography>
         <Typography variant="paragraph" className="text-center">
           Hoạt động trong lĩnh vực: Xây dựng, lắp đặt, sửa chữa các công trình
           dân dụng, công trình công nghiệp, kỹ thuật hạ tầng.Trong suốt thời
@@ -56,7 +56,10 @@ const Infrastructure = () => {
       <div className="grid md:grid-cols-2 mt-4 gap-1">
         {dataInfrastructure.map((item, index) => {
           return (
-            <div className="flex mt-2 border-2" key={index}>
+            <div
+              className="flex mt-2 shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] rounded-lg overflow-hidden"
+              key={index}
+            >
               <>
                 <Card className="flex rounded-none w-1/2 h-full border-none shadow-none">
                   <CardBody className="p-0 px-2">

@@ -63,31 +63,54 @@ const Nav = () => {
               className="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2"
             >
               <span>Dịch vụ</span>
-              {/* <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4 fill-current pt-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-          </svg> */}
-            </a>
-            {/* <ul className="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b">
-          <li>
-            <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
-              Web development
             </a>
           </li>
-          <li>
-            <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
-              Web Design
+          <li className="relative parent">
+            <a className="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
+              <span>Trang trại</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-4 h-4 fill-current pt-1"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+              </svg>
             </a>
-          </li>
-          <li>
-            <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
-              Machine Learning
-            </a>
-          </li>
-        </ul> */}
+            <div className="before:h-5 before:content before:w-full before:absolute before:right-0 before:-bottom-4 before:left-0 before:block"></div>
+            <ul className="child transition duration-300 md:absolute right-0 md:w-48 bg-white md:shadow-lg md:rounded md:mt-2">
+              <li>
+                <a
+                  href="/area/area1"
+                  className="flex px-5 py-3 hover:bg-gray-50"
+                >
+                  Trang trại 1
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/area/area2"
+                  className="flex px-5 py-3 hover:bg-gray-50"
+                >
+                  Trang trại 2
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/area/area3"
+                  className="flex px-5 py-3 hover:bg-gray-50"
+                >
+                  Trang trại 3
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/area/area4"
+                  className="flex px-5 py-3 hover:bg-gray-50"
+                >
+                  Trang trại 4
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
             <a
@@ -95,6 +118,14 @@ const Nav = () => {
               className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
             >
               <span>Tin tức</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/events"
+              className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
+            >
+              <span>Sự kiện</span>
             </a>
           </li>
           <li>

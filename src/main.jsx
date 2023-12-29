@@ -8,6 +8,9 @@ import HomePage from "./pages/HomePage.jsx";
 import About from "./pages/About";
 import Contact from "./components/Contact/Contact.jsx";
 import Blogs from "./components/Blogs/Blogs.jsx";
+import AreaPage from "./pages/AreaPage.jsx";
+import Area1 from "./components/area/Area1.jsx";
+import EventPage from "./pages/EventPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,12 +27,26 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
+        path: "/events",
+        element: <EventPage />,
+      },
+      {
         path: "/blogs",
         element: <Blogs />,
       },
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/area",
+        element: <AreaPage />,
+        children: [
+          {
+            path: "area1",
+            element: <Area1 />,
+          },
+        ],
       },
     ],
   },

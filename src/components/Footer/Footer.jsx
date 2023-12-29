@@ -2,18 +2,22 @@ import { Globe, Mail, MapPinned, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font border-t-2 mt-24 flex flex-col py-4">
-      <div className="container mx-auto flex flex-col xl:flex-row md:items-center lg:items-start justify-between">
-        <div className="w-full h-[280px] flex justify-between items-start">
+    <footer className="text-gray-600 body-font border-t-2 mt-24 flex flex-col">
+      <div className="container mx-auto flex flex-col xl:flex-row md:items-center lg:items-start justify-between py-4">
+        <div className="w-full h-[280px] flex justify-between items-start p-3">
           <div className="w-1/2 md:mx-0 mx-auto text-center md:text-left">
-            <span className="font-bold text-xl">TRẠI GÀ MINH TÂN PHÁT</span>
+            <span className="font-bold text-md md:text-xl">
+              TRẠI GÀ MINH TÂN PHÁT
+            </span>
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               <img src="public/looogo.png" alt="" />
             </a>
           </div>
           <div className="w-1/2 flex-grow flex flex-wrap md:pl-20 ml-3 -mb-10 md:text-left text-center">
-            <span className="font-bold text-xl">THÔNG TIN LIÊN HỆ</span>
-            <ul className="mt-2 text-sm text-left text-gray-500">
+            <span className="font-bold text-md md:text-xl">
+              THÔNG TIN LIÊN HỆ
+            </span>
+            <ul className="mt-2 text-xs md:text-sm text-left text-gray-500">
               <li className="flex items-center justify-start">
                 <i className="p-2">
                   <MapPinned size={24} />
@@ -40,13 +44,13 @@ const Footer = () => {
                 <i className="p-2">
                   <Globe size={24} />
                 </i>
-                <span className="ml-2">Website: taigaminhtanphat.com</span>
+                <span className="ml-2">Website: traigaminhtanphat.com</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="w-full px-4 ml-3">
+        <div className="w-full md:px-4 md:ml-3">
           <iframe
             className="w-full h-[220px]"
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61554767048879&tabs=timeline&width=700&height=366&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
@@ -65,7 +69,7 @@ const Footer = () => {
           <p className="text-gray-500 text-sm text-center sm:text-left">
             © 2023 MINHTANPHAT -
             <a
-              href="https://twitter.com/knyttneve"
+              href="/"
               rel="noopener noreferrer"
               className="text-gray-600 ml-1"
               target="_blank"
