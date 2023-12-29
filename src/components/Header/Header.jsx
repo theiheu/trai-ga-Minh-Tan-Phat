@@ -1,14 +1,9 @@
 import { Facebook, Instagram, Mail, Phone, Youtube } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Nav from "../Nav/Nav";
-import MobileNav from "../MobileNav/MobileNav";
 
 const Header = () => {
   const [size, setSize] = useState(16);
-
-  useEffect(() => {
-    // Add SEO optimization logic here
-  }, []);
 
   return (
     <>
