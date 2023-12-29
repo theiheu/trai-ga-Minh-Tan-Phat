@@ -13,7 +13,7 @@ const Statistic = () => {
                 alt=""
               />
               <h2 className="title-font font-medium text-3xl text-gray-900">
-                <CountUp end={27000} duration={10} />
+                <CountUp end={27000} duration={2} enableScrollSpy />
               </h2>
               <p className="leading-relaxed">DIỆN TÍCH TRẠI/M2</p>
             </div>
@@ -26,7 +26,7 @@ const Statistic = () => {
                 alt=""
               />
               <h2 className="title-font font-medium text-3xl text-gray-900">
-                <CountUp end={500000} duration={10} />
+                <CountUp end={500000} duration={2} enableScrollSpy />
               </h2>
               <p className="leading-relaxed">GÀ ĐẺ</p>
             </div>
@@ -39,7 +39,7 @@ const Statistic = () => {
                 alt=""
               />
               <h2 className="title-font font-medium text-3xl text-gray-900">
-                <CountUp end={150000} duration={10} />
+                <CountUp end={150000} duration={2} enableScrollSpy />
               </h2>
               <p className="leading-relaxed">GÀ HẬU BỊ</p>
             </div>
@@ -52,7 +52,7 @@ const Statistic = () => {
                 alt=""
               />
               <h2 className="title-font font-medium text-3xl text-gray-900">
-                <CountUp end={450000} duration={10} />
+                <CountUp end={450000} duration={2} enableScrollSpy />
               </h2>
               <p className="leading-relaxed">SẢN LƯỢNG TRỨNG/NGÀY</p>
             </div>
