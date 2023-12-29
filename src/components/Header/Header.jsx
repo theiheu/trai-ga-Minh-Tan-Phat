@@ -5,11 +5,15 @@ const Header = () => {
   const [header, setHeader] = useState(false);
 
   useEffect(() => {
-    const scrollYPos = window.addEventListener("scroll", () => {
-      window.scrollY > 220 ? setHeader(true) : setHeader(false);
-    });
+    const handleScroll = () => {
+      window.scrollY >= 400 ? setHeader(true) : setHeader(false);
+    };
 
-    return window.addEventListener("scroll", scrollYPos);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -25,19 +29,23 @@ const Header = () => {
               <li>
                 <a href="mailto:tenmien@cuaban.com" className="flex gap-2">
                   <Mail />
-                  tenmien@cuaban.com
+                  ttgminhtanphat@gmail.com
                 </a>
               </li>
               <li className="border-l-2 border-gray-500 pl-2">
                 <a href="tel:0942166086" className="flex gap-2">
                   <Phone />
-                  +84 942 166 086
+                  096 407 78 79
                 </a>
               </li>
             </ul>
           </div>
           <div className="flex gap-2 text-white">
-            <a className="rounded-full border-2 p-2" href="#">
+            <a
+              className="rounded-full border-2 p-2"
+              href="https://www.facebook.com/profile.php?id=61554767048879&ref=embed_page"
+              target="noreferre"
+            >
               <Facebook size={16} />
             </a>{" "}
             <a className="rounded-full border-2 p-2" href="#">
@@ -55,7 +63,7 @@ const Header = () => {
           <ul className="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
             <li>
               <a
-                href="#"
+                href="/"
                 className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
               >
                 <span>Trang chủ</span>
@@ -63,7 +71,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="about"
                 className="flex md:inline-flex p-4 items-center hover:bg-gray-50"
               >
                 <span>Giới thiệu</span>
@@ -75,15 +83,15 @@ const Header = () => {
                 className="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2"
               >
                 <span>Dịch vụ</span>
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-4 h-4 fill-current pt-1"
                   viewBox="0 0 24 24"
                 >
                   <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-                </svg>
+                </svg> */}
               </a>
-              <ul className="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b">
+              {/* <ul className="child transition duration-300 md:absolute top-full right-0 md:w-48 bg-white md:shadow-lg md:rounded-b">
                 <li>
                   <a href="#" className="flex px-4 py-3 hover:bg-gray-50">
                     Web development
@@ -99,7 +107,7 @@ const Header = () => {
                     Machine Learning
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
             <li>
               <a
