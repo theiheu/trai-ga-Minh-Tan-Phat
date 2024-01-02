@@ -8,7 +8,6 @@ const Area1 = () => {
             1
           </span>
         </h1>
-
         <div className="h-1 w-20 bg-yellow-500 rounded" />
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="text-gray-600 body-font border-t-2 mt-24 flex flex-col">
       <div className="container mx-auto flex flex-col xl:flex-row md:items-center lg:items-start justify-between py-4">
-        <div className="w-full h-[280px] flex justify-between items-start p-3">
+        <div className="md:w-3/5 h-[280px] flex justify-between items-start p-4">
           <div className="w-1/2 md:mx-0 mx-auto text-center md:text-left">
             <span className="font-bold text-md md:text-xl">
               TRẠI GÀ MINH TÂN PHÁT
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full md:px-4 md:ml-3">
+        <div className="md:w-2/5 md:px-4 md:ml-3">
           <iframe
             className="w-full h-[220px]"
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61554767048879&tabs=timeline&width=700&height=366&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"

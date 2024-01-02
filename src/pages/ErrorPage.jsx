@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ErrorPage = () => {
   return (
     <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -10,15 +12,15 @@ const ErrorPage = () => {
           Xin lỗi, chúng tôi không thể tìm thấy trang bạn đang tìm kiếm.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Trở về trang chủ.
-          </a>
-          <a href="#" className="text-sm font-semibold text-gray-900">
+          </Link>
+          <Link to="#" className="text-sm font-semibold text-gray-900">
             Liên hệ hỗ trợ <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
       </div>
     </main>

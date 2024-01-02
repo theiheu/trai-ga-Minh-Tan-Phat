@@ -6,7 +6,8 @@ import {
   SpeedDialAction,
   Typography,
 } from "@material-tailwind/react";
-import { CogIcon, HomeIcon, PlusIcon } from "lucide-react";
+import { HomeIcon, MessageSquareText, Phone, PlusIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function SpeedDialWithTextOutside() {
   const labelProps = {
@@ -28,15 +29,19 @@ export function SpeedDialWithTextOutside() {
           <SpeedDialContent>
             <SpeedDialAction className="relative">
               <HomeIcon className="h-5 w-5" />
-              <Typography {...labelProps}>Home</Typography>
+              <Typography {...labelProps}>
+                <Link to="/">Trang chủ</Link>
+              </Typography>
             </SpeedDialAction>
             <SpeedDialAction className="relative">
-              <CogIcon className="h-5 w-5" />
-              <Typography {...labelProps}>Settings</Typography>
+              <Phone className="h-5 w-5" />
+              <Typography {...labelProps}>
+                <Link to="tel:0964077879">Gọi điện</Link>
+              </Typography>
             </SpeedDialAction>
             <SpeedDialAction className="relative">
-              {/* <Square3Stack3DIcon className="h-5 w-5" /> */}
-              <Typography {...labelProps}>Pages</Typography>
+              <MessageSquareText className="h-5 w-5" />
+              <Typography {...labelProps}>Nhắn tin</Typography>
             </SpeedDialAction>
           </SpeedDialContent>
         </SpeedDial>

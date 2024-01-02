@@ -1,4 +1,5 @@
 import { Button, Typography } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Establish = () => {
   return (
@@ -16,7 +17,9 @@ const Establish = () => {
             PHÁT TRIỂN BỀN VỮNG - THÀNH CÔNG VƯỢT TRỘI.
           </Typography>
         </div>
-        <Button className="bg-amber-800 mt-3">Xem thêm</Button>
+        <Button className="bg-amber-800 mt-3">
+          <Link to="/about">Xem thêm</Link>
+        </Button>
       </div>
     </section>
   );
