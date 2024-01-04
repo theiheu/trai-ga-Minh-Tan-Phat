@@ -10,7 +10,7 @@ const Footer = () => {
               TRẠI GÀ MINH TÂN PHÁT
             </span>
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <img src="public/looogo.png" alt="" />
+              <img src="/looogo.png" alt="" />
             </a>
           </div>
           <div className="w-1/2 flex-grow flex flex-wrap md:pl-20 ml-3 -mb-10 md:text-left text-center">

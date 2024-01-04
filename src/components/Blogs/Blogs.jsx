@@ -20,7 +20,7 @@ const Blogs = () => {
               />
               <div className="flex my-2">
                 <img
-                  src="public/img/vukehoach.png"
+                  src="/img/vukehoach.png"
                   alt=""
                   className="w-8 h-8 rounded-full"
                 />
@@ -70,14 +70,10 @@ const Blogs = () => {
           </div>
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col pr-5">
-              <img
-                src="public/img/t7vevanduong.jpg"
-                alt=""
-                className="rounded-md "
-              />
+              <img src="/img/t7vevanduong.jpg" alt="" className="rounded-md " />
               <div className="flex my-2">
                 <img
-                  src="public/img/baobinhduong.png"
+                  src="/img/baobinhduong.png"
                   alt=""
                   className="w-8 h-8 rounded-full"
                 />

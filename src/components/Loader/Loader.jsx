@@ -1,7 +1,16 @@
+import "./loader.module.css";
+
 const Loader = () => {
   return (
-    <div className="fixed top-0 right-0 left-0 bottom-0 bg-blue-gray-500 z-[1000]">
-      Loader...
+    <div className="middle">
+      <div className="bar bar1" />
+      <div className="bar bar2" />
+      <div className="bar bar3" />
+      <div className="bar bar4" />
+      <div className="bar bar5" />
+      <div className="bar bar6" />
+      <div className="bar bar7" />
+      <div className="bar bar8" />
     </div>
   );
 };

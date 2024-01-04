@@ -1,58 +1,58 @@
 const dataImgManureFactory = [
   [
     {
-      srcImg: "public/img/phanbon/7ff6e10e9cb534eb6da4.jpg",
+      srcImg: "/img/phanbon/7ff6e10e9cb534eb6da4.jpg",
     },
     {
-      srcImg: "public/img/phanbon/09d873eb0e50a60eff41.jpg",
+      srcImg: "/img/phanbon/09d873eb0e50a60eff41.jpg",
     },
     {
-      srcImg: "public/img/phanbon/10fc22245f9ff7c1ae8e.jpg",
+      srcImg: "/img/phanbon/10fc22245f9ff7c1ae8e.jpg",
     },
     {
-      srcImg: "public/img/phanbon/20e0ff61a0d9088751c859.jpg",
-    },
-  ],
-  [
-    {
-      srcImg: "public/img/phanbon/374debccb4741c2a456561.jpg",
-    },
-    {
-      srcImg: "public/img/phanbon/588a84bffb04535a0a15.jpg",
-    },
-    {
-      srcImg: "public/img/phanbon/1643cfc2907a3824616b60.jpg",
-    },
-    {
-      srcImg: "public/img/phanbon/8240b13ccc8764d93d96.jpg",
+      srcImg: "/img/phanbon/20e0ff61a0d9088751c859.jpg",
     },
   ],
   [
     {
-      srcImg: "public/img/phanbon/99304ab11509bd57e41863.jpg",
+      srcImg: "/img/phanbon/374debccb4741c2a456561.jpg",
     },
     {
-      srcImg: "public/img/phanbon/470247fa3b41931fca50.jpg",
+      srcImg: "/img/phanbon/588a84bffb04535a0a15.jpg",
     },
     {
-      srcImg: "public/img/phanbon/a5f872792dc1859fdcd062.jpg",
+      srcImg: "/img/phanbon/1643cfc2907a3824616b60.jpg",
     },
     {
-      srcImg: "public/img/phanbon/b9347bae0615ae4bf704.jpg",
+      srcImg: "/img/phanbon/8240b13ccc8764d93d96.jpg",
     },
   ],
   [
     {
-      srcImg: "public/img/phanbon/bb6475fe0845a01bf954.jpg",
+      srcImg: "/img/phanbon/99304ab11509bd57e41863.jpg",
     },
     {
-      srcImg: "public/img/phanbon/cd74db8ca7370f695626.jpg",
+      srcImg: "/img/phanbon/470247fa3b41931fca50.jpg",
     },
     {
-      srcImg: "public/img/phanbon/f5b9fea882132a4d7302.jpg",
+      srcImg: "/img/phanbon/a5f872792dc1859fdcd062.jpg",
     },
     {
-      srcImg: "public/img/phanbon/7ff6e10e9cb534eb6da4.jpg",
+      srcImg: "/img/phanbon/b9347bae0615ae4bf704.jpg",
+    },
+  ],
+  [
+    {
+      srcImg: "/img/phanbon/bb6475fe0845a01bf954.jpg",
+    },
+    {
+      srcImg: "/img/phanbon/cd74db8ca7370f695626.jpg",
+    },
+    {
+      srcImg: "/img/phanbon/f5b9fea882132a4d7302.jpg",
+    },
+    {
+      srcImg: "/img/phanbon/7ff6e10e9cb534eb6da4.jpg",
     },
   ],
 ];

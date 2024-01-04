@@ -1,24 +1,24 @@
 const dataImgArea2 = [
   [
     {
-      srcImg: "../public/img/khu2/0b15c9ed79b1d2ef8ba06.jpg",
+      srcImg: ".. /img/khu2/0b15c9ed79b1d2ef8ba06.jpg",
     },
     {
-      srcImg: "../public/img/khu2/80654b9dfbc1509f09d03.jpg",
+      srcImg: ".. /img/khu2/80654b9dfbc1509f09d03.jpg",
     },
     {
-      srcImg: "../public/img/khu2/411178e9c8b563eb3aa42.jpg",
+      srcImg: ".. /img/khu2/411178e9c8b563eb3aa42.jpg",
     },
     {
-      srcImg: "../public/img/khu2/a4949b8b28d78389dac61.jpg",
+      srcImg: ".. /img/khu2/a4949b8b28d78389dac61.jpg",
     },
   ],
   [
     {
-      srcImg: "../public/img/khu2/b90406f5b6a91df744b85.jpg",
+      srcImg: ".. /img/khu2/b90406f5b6a91df744b85.jpg",
     },
     {
-      srcImg: "../public/img/khu2/c6338dc33d9f96c1cf8e4.jpg",
+      srcImg: ".. /img/khu2/c6338dc33d9f96c1cf8e4.jpg",
     },
   ],
 ];
