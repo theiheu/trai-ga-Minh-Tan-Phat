@@ -1,30 +1,30 @@
 const dataImgArea5 = [
   [
     {
-      srcImg: "public/img/khu5/33dc9a1cf7525c0c054326.jpg",
+      srcImg: "/img/khu5/33dc9a1cf7525c0c054326.jpg",
     },
     {
-      srcImg: "public/img/khu5/99dfd96cb4221f7c463327.jpg",
+      srcImg: "/img/khu5/99dfd96cb4221f7c463327.jpg",
     },
     {
-      srcImg: "public/img/khu5/3557da4cb6021d5c441324.jpg",
+      srcImg: "/img/khu5/3557da4cb6021d5c441324.jpg",
     },
     {
-      srcImg: "public/img/khu5/a6518c7be0354b6b122423.jpg",
+      srcImg: "/img/khu5/a6518c7be0354b6b122423.jpg",
     },
   ],
   [
     {
-      srcImg: "public/img/khu5/d646383c5472ff2ca66320.jpg",
+      srcImg: "/img/khu5/d646383c5472ff2ca66320.jpg",
     },
     {
-      srcImg: "public/img/khu5/e92152e13faf94f1cdbe25.jpg",
+      srcImg: "/img/khu5/e92152e13faf94f1cdbe25.jpg",
     },
     {
-      srcImg: "public/img/khu5/f00c2f34437ae824b16b22.jpg",
+      srcImg: "/img/khu5/f00c2f34437ae824b16b22.jpg",
     },
     {
-      srcImg: "public/img/khu5/f001a097ccd967873ec821.jpg",
+      srcImg: "/img/khu5/f001a097ccd967873ec821.jpg",
     },
   ],
 ];

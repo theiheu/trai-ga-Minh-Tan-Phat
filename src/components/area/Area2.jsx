@@ -20,6 +20,12 @@ const dataImgArea2 = [
     {
       srcImg: " /img/khu2/c6338dc33d9f96c1cf8e4.jpg",
     },
+    {
+      srcImg: " /img/khu2/411178e9c8b563eb3aa42.jpg",
+    },
+    {
+      srcImg: " /img/khu2/a4949b8b28d78389dac61.jpg",
+    },
   ],
 ];
 
