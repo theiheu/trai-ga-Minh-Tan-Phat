@@ -119,6 +119,14 @@ const Nav = () => {
                   Trang trại 4
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/area/area5"
+                  className="flex px-5 py-3 hover:bg-gray-50"
+                >
+                  Trang trại 5
+                </Link>
+              </li>
             </ul>
           </li>
           <li>

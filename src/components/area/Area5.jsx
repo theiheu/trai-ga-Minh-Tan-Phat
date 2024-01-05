@@ -1,29 +1,35 @@
-const dataImgArea2 = [
+const dataImgArea5 = [
   [
     {
-      srcImg: " /img/khu2/0b15c9ed79b1d2ef8ba06.jpg",
+      srcImg: "public/img/khu5/33dc9a1cf7525c0c054326.jpg",
     },
     {
-      srcImg: " /img/khu2/80654b9dfbc1509f09d03.jpg",
+      srcImg: "public/img/khu5/99dfd96cb4221f7c463327.jpg",
     },
     {
-      srcImg: " /img/khu2/411178e9c8b563eb3aa42.jpg",
+      srcImg: "public/img/khu5/3557da4cb6021d5c441324.jpg",
     },
     {
-      srcImg: " /img/khu2/a4949b8b28d78389dac61.jpg",
+      srcImg: "public/img/khu5/a6518c7be0354b6b122423.jpg",
     },
   ],
   [
     {
-      srcImg: " /img/khu2/b90406f5b6a91df744b85.jpg",
+      srcImg: "public/img/khu5/d646383c5472ff2ca66320.jpg",
     },
     {
-      srcImg: " /img/khu2/c6338dc33d9f96c1cf8e4.jpg",
+      srcImg: "public/img/khu5/e92152e13faf94f1cdbe25.jpg",
+    },
+    {
+      srcImg: "public/img/khu5/f00c2f34437ae824b16b22.jpg",
+    },
+    {
+      srcImg: "public/img/khu5/f001a097ccd967873ec821.jpg",
     },
   ],
 ];
 
-const Area2 = () => {
+const Area5 = () => {
   return (
     <div className="p-2">
       <div className="w-full my-6 ">
@@ -37,7 +43,7 @@ const Area2 = () => {
         <div className="h-1 w-20 bg-yellow-500 rounded" />
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-        {dataImgArea2.map((item, index) => (
+        {dataImgArea5.map((item, index) => (
           <div className="grid gap-4" key={index}>
             {item.map((item, index) => (
               <div key={index}>
@@ -55,4 +61,4 @@ const Area2 = () => {
   );
 };
 
-export default Area2;
+export default Area5;

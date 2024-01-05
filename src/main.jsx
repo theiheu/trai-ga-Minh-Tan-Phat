@@ -6,6 +6,7 @@ import "./index.css";
 import { Suspense, lazy } from "react";
 import { ThemeProvider } from "@material-tailwind/react";
 import { Route, Routes } from "react-router-loading";
+import Area5 from "./components/area/Area5.jsx";
 
 const Blogs = lazy(() => import("./components/Blogs/Blogs.jsx"));
 const ErrorPage = lazy(() => import("./pages/ErrorPage.jsx"));
@@ -112,6 +113,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               <Route path="area2" element={<Area2 />} loading />
               <Route path="area3" element={<Area3 />} loading />
               <Route path="area4" element={<Area4 />} loading />
+              <Route path="area5" element={<Area5 />} loading />
             </Route>
           </Route>
           <Route path="*" element={<ErrorPage />} />
