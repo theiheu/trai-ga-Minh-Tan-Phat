@@ -14,7 +14,7 @@ const Blogs = () => {
           <div className="py-8 flex flex-wrap md:flex-nowrap">
             <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col pr-5">
               <img
-                src="src/assets/mh_giacam_binhduong3.jpg"
+                src="/img/mh_giacam_binhduong3.jpg"
                 alt=""
                 className="rounded-md "
               />
