@@ -8,7 +8,7 @@ const Statistic = () => {
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <img
-                src="/src/assets/statisticIcon/area.svg"
+                src={require("../assets/statisticIcon/area.svg").default}
                 className=" text-yellow-500 w-12 h-12 mb-3 inline-block"
                 alt=""
               />
@@ -21,7 +21,7 @@ const Statistic = () => {
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <img
-                src="/src/assets/statisticIcon/poultry.svg"
+                src="../assets/statisticIcon/poultry.svg"
                 className=" text-yellow-500 w-12 h-12 mb-3 inline-block"
                 alt=""
               />
@@ -34,7 +34,7 @@ const Statistic = () => {
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <img
-                src="/src/assets/statisticIcon/chicken.svg"
+                src="../src/assets/statisticIcon/chicken.svg"
                 className=" text-yellow-500 w-12 h-12 mb-3 inline-block"
                 alt=""
               />
@@ -47,7 +47,7 @@ const Statistic = () => {
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
               <img
-                src="/src/assets/statisticIcon/eggs.svg"
+                src="../src/assets/statisticIcon/eggs.svg"
                 className=" text-yellow-500 w-12 h-12 mb-3 inline-block"
                 alt=""
               />
