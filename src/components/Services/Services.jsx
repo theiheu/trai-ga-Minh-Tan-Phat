@@ -2,14 +2,14 @@ const dataServices = [
   {
     subtitle: "PHÂN BÓN",
     title: "Cung cấp phân bón",
-    srcImg: "/src/assets/img/712656736788.jpg",
+    srcImg: "../src/assets/img/712656736788.jpg",
     content:
       "Chúng tôi cam kết duy trì chất lượng cao trong quá trình xử lý phân bón, đảm bảo rằng sản phẩm cuối cùng là một nguồn dinh dưỡng an toàn và hiệu quả cho việc trồng trọt.",
   },
   {
     subtitle: "GÀ HẬU BỊ",
     title: "Cung cấp gà hậu bị",
-    srcImg: "/src/assets/img/527279020508.jpg",
+    srcImg: "../src/assets/img/527279020508.jpg",
     content: `Gà hậu bị của chúng tôi được chọn lọc kỹ lưỡng từ những đàn gà
       ngoại nhập và được chăm sóc đặc biệt để đảm bảo sức khỏe và tính
       trạng tốt nhất.`,
@@ -17,7 +17,7 @@ const dataServices = [
   {
     subtitle: "GÀ GIỐNG",
     title: "Cung cấp gà giống",
-    srcImg: "/src/assets/img/142223600882.jpg",
+    srcImg: "../src/assets/img/142223600882.jpg",
     content: `Được xây dựng trên nền tảng của kinh nghiệm chăm sóc gà và sự
       chú ý đặc biệt đến sức khỏe của đàn gà, chúng tôi cam kết mang
       đến cho khách hàng những giải pháp nuôi gà giống hiệu quả và
